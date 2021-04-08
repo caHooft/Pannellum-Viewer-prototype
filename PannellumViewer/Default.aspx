@@ -12,17 +12,20 @@
     <script src="Script/js/pannellum.js"></script>
     <script src="Script/js/libpannellum.js"></script>
     <style>
-        html, body {
+        html, body 
+        {
             height: 100%;
             margin: 0;
         }
 
-        #panorama {
+        #panorama 
+        {
             width: 100%;
             height: 80vh;
         }
 
-        #showCoordinate {
+        #showCoordinate 
+        {
             width: 100%;
             margin-top: 3px;
             height: 15vh;
@@ -30,7 +33,8 @@
         }
     </style>
     <script>       
-        var PrintCoordinate = function (hotSpotDiv,args) {
+        var PrintCoordinate = function (hotSpotDiv, args)
+        {
             var pitch = args.pitch;
             jQuery("label[for='pitch']").html("<strong>Pitch: </strong>" + pitch);
             var yaw = args.yaw;
@@ -49,7 +53,8 @@
             <label for="yaw"><strong>Yaw:</strong></label>
         </div>
         <script>
-            pannellum.viewer('panorama', {
+            pannellum.viewer('panorama',
+                {
                 "type": "equirectangular",
                 "panorama": "360images/QG13/00/IMG_20201030_154626_00_002.jpg",
                 autoLoad: true,
@@ -64,7 +69,8 @@
                  */
                 //"hotSpotDebug": true,
 
-                "hotSpots": [
+                "hotSpots":
+                [
                     {
                         "pitch": -14.813,
                         "yaw": -147.880,
